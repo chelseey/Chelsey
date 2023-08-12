@@ -14,7 +14,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #282A36;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -36,3 +36,77 @@
     transform: rotate(360deg);
   }
 }
+
+body {
+  /* Set the VSCode Dracula theme background color */
+  background-color: #282a36;
+  color: #f8f8f2; /* Foreground color */
+  font-family: 'Courier New', Courier, monospace; /* Code-like font */
+  overflow-x: hidden;
+  -ms-overflow-style: none;
+}
+
+#code-background {
+  position: fixed;
+  top: 50px; /* Small margin from the top */
+  left: 50px; /* Small margin from the left */
+  width: calc(100% - 100px); /* Width minus margins */
+  height: calc(100% - 100px); /* Height minus margins */
+  padding: 10px;
+  overflow-y: hidden;
+  z-index: -1; /* Keep it behind the main content */
+  scrollbar-width: none; /* Hide scrollbar */
+}
+
+.comment {
+  color: #6272a4;
+}
+
+#code-background {
+  display: flex;
+}
+
+.line-numbers {
+  width: 40px; 
+  text-align: right;
+  padding-right: 10px;
+  color: #6272a4;
+}
+
+.line-numbers,
+.language-javascript code {
+    vertical-align: baseline;
+    line-height: 1.5; 
+    font-size: 30px;
+    margin-top: 0px;
+    scrollbar-width: none; /* Hide scrollbar */
+    -ms-overflow-style: none;
+}
+
+pre.language-javascript {
+  margin-top: 0px;
+  padding-top: 0px;
+}
+
+.container {
+  padding: 10vh; 
+  display: flex;
+  justify-content: center;
+  align-items: center; /* These will center the content inside each block */
+}
+
+.content-box {
+  width: 70vh; /* Set width */
+  min-height: 20vh; /* Set minimum height */
+  padding: 20px; /* Padding around content */
+  background-color: #13131648; /* Dracula background color */
+  border-radius: 10px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  overflow: hidden; /* Ensures content stays within the box */
+}
+
+::-webkit-scrollbar {
+  width: 0;  /* For vertical scrollbars */
+  height: 0; /* For horizontal scrollbars */
+}
+
