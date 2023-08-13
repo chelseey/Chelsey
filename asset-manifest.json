@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/www.chelsey.com.au/static/css/main.c94e351e.css",
-    "main.js": "/www.chelsey.com.au/static/js/main.1f71ed86.js",
-    "static/js/787.9c1d564c.chunk.js": "/www.chelsey.com.au/static/js/787.9c1d564c.chunk.js",
-    "index.html": "/www.chelsey.com.au/index.html",
-    "main.c94e351e.css.map": "/www.chelsey.com.au/static/css/main.c94e351e.css.map",
-    "main.1f71ed86.js.map": "/www.chelsey.com.au/static/js/main.1f71ed86.js.map",
-    "787.9c1d564c.chunk.js.map": "/www.chelsey.com.au/static/js/787.9c1d564c.chunk.js.map"
+    "main.css": "/static/css/main.c94e351e.css",
+    "main.js": "/static/js/main.210b1f50.js",
+    "static/js/787.9c1d564c.chunk.js": "/static/js/787.9c1d564c.chunk.js",
+    "index.html": "/index.html",
+    "main.c94e351e.css.map": "/static/css/main.c94e351e.css.map",
+    "main.210b1f50.js.map": "/static/js/main.210b1f50.js.map",
+    "787.9c1d564c.chunk.js.map": "/static/js/787.9c1d564c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.c94e351e.css",
-    "static/js/main.1f71ed86.js"
+    "static/js/main.210b1f50.js"
   ]
 }
