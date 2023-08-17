@@ -51,9 +51,10 @@ body {
   top: 50px; /* Small margin from the top */
   left: 10px; /* Small margin from the left */
   width: calc(100% - 100px); /* Width minus margins */
-  height: calc(100% - 100px); /* Height minus margins */
+  max-height: calc(100% - 100px); /* Width minus margins */
+  overflow-y: auto;
+  overflow-x: hidden;
   padding: 10px;
-  overflow-y: hidden;
   z-index: -1; /* Keep it behind the main content */
   scrollbar-width: none; /* Hide scrollbar */
 }
@@ -81,23 +82,28 @@ body {
     margin-top: 0px;
     scrollbar-width: none; /* Hide scrollbar */
     -ms-overflow-style: none;
+    padding-top: 0px;
 }
 
 pre.language-javascript {
   margin-top: 0px;
   padding-top: 0px;
+  vertical-align: baseline;
+  line-height: 1.5; 
+  font-size: 30px;
 }
 
 .container {
   padding: 10vh; 
   display: flex;
   justify-content: center;
-  align-items: center; /* These will center the content inside each block */
+  align-items: center; /* center the content inside each block */
+  scroll-snap-align: center;
 }
 
 .content-box {
-  width: 70vh; /* Set width */
-  min-height: 20vh; /* Set minimum height */
+  width: 50vw; /* Set width */
+  min-height: 30vh; /* Set minimum height */
   padding: 20px; /* Padding around content */
   background-color: #191924ef; /* Dracula background color */
   border-radius: 10px; 
@@ -109,4 +115,11 @@ pre.language-javascript {
   width: 0;  /* For vertical scrollbars */
   height: 0; /* For horizontal scrollbars */
 }
+
+.scrolling-container {
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  position: relative;
+}
+
 
